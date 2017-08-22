@@ -1,52 +1,54 @@
 hash: 46d5f0660b4133930f21b73e47772e91a4b37915752d4c7985b9845070da980e
-updated: 2016-10-26T16:58:22.648514312-02:00
+updated: 2017-08-22T14:42:32.811045761+05:30
 imports:
 - name: github.com/dgrijalva/jwt-go
   version: d2709f9f1f31ebcda9651b03077758c1f3a0018c
 - name: github.com/go-sql-driver/mysql
-  version: a732e14c62dde3285440047bba97581bc472ae18
+  version: a0583e0143b1624142adab07e0e97fe106d99561
 - name: github.com/gocql/gocql
-  version: 8fddba88e0d246cabfb37be496813a5c30979ad6
+  version: b9337fa4c59ce1db20300290bd7a9a7063fb6784
   subpackages:
   - internal/lru
   - internal/murmur
   - internal/streams
 - name: github.com/golang/protobuf
-  version: df1d3ca07d2d07bba352d5b73c4313b4e2a6203e
+  version: ab9f9a6dab164b7d1246e0e688b0ab7b94d8553e
   subpackages:
   - proto
+  - ptypes/any
   - ptypes/empty
   - ptypes/timestamp
 - name: github.com/golang/snappy
-  version: d9eb7a3d35ec988b8585d4a0068e462c27d28380
+  version: 553a641470496b2327abcac10b36396bd98e45c9
 - name: github.com/hailocab/go-hostpool
   version: e80d13ce29ede4452c43dea11e79b9bc8a15b478
 - name: github.com/kelseyhightower/envconfig
-  version: 9aca109c9aec4633fced9717c4a09ecab3d33111
+  version: f611eb38b3875cc3bd991ca91c51d06446afa14c
 - name: github.com/nats-io/nats
   version: fc85f44c1659ab6610d76fd6bd0e44ad2cadf697
   subpackages:
   - encoders/builtin
+  - encoders/protobuf
 - name: github.com/nats-io/nuid
-  version: 289cccf02c178dc782430d534e3c1f5b72af807f
+  version: 3cf34f9fca4e88afa9da8eabd75e3326c9941b44
 - name: github.com/pkg/errors
-  version: 839d9e913e063e28dfd0e6c7b7512793e0a48be9
+  version: c605e284fe17294bda444b34710735b29d1a9d90
 - name: github.com/satori/go.uuid
-  version: b061729afc07e77a8aa4fad0a2fd840958f1942a
+  version: 5bf94b69c6b68ee1b541973bb8e1144db23a194b
 - name: github.com/stretchr/testify
-  version: 976c720a22c8eb4eb6a0b4348ad85ad12491a506
+  version: 890a5c3458b43e6104ff5da8dfa139d013d77544
   subpackages:
   - assert
   - mock
   - require
   - suite
 - name: golang.org/x/crypto
-  version: 594708b89f21ece706681be23d04a6513a22de6e
+  version: eb71ad9bd329b5ac0fd0148dd99bd62e8be8e035
   subpackages:
   - bcrypt
   - blowfish
 - name: golang.org/x/net
-  version: 0d8126fc6144eb5257485c59148128691e8ff849
+  version: 1c05540f6879653db88113bc4a2b70aec4bd491f
   subpackages:
   - context
   - http2
@@ -55,22 +57,39 @@ imports:
   - internal/timeseries
   - lex/httplex
   - trace
+- name: golang.org/x/text
+  version: e56139fd9c5bc7244c76116c68e500765bb6db6b
+  subpackages:
+  - secure/bidirule
+  - transform
+  - unicode/bidi
+  - unicode/norm
+- name: google.golang.org/genproto
+  version: ee236bd376b077c7a89f260c026c4735b195e459
+  subpackages:
+  - googleapis/rpc/status
 - name: google.golang.org/grpc
-  version: b7f1379d3cbbbeb2ca3405852012e237aa05459e
+  version: b3ddf786825de56a4178401b7e174ee332173b66
   subpackages:
   - codes
+  - connectivity
   - credentials
+  - grpclb/grpc_lb_v1
   - grpclog
   - internal
+  - keepalive
   - metadata
   - naming
   - peer
+  - stats
+  - status
+  - tap
   - transport
 - name: gopkg.in/inf.v0
   version: 3887ee99ecf07df5b447e9b00d9c0b2adaa9f3e4
 testImports:
 - name: github.com/davecgh/go-spew
-  version: 6d212800a42e8ab5c146b8ace3490ee17e5225f9
+  version: 04cdfd42973bb9c8589fd6a731800cf222fde1a9
   subpackages:
   - spew
 - name: github.com/pmezard/go-difflib
